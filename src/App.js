@@ -4,24 +4,22 @@ import './App.css';
 
 const App = () => {
   const [query, setQuery] = useState('');
+  const [weather, setWeather] = useState({});
 
   const search = async (e) => {
     if(e.key === 'Enter') {
       const data = await fetchWeather(query)
 
-      console.log(data);
+      //takes the data from the search to use in the app
+      setWeather(data);
+
+      //clears the data after the search completes
+      setQuery('')
     }
   }
   return (
     <div className='main-container'>
-      <input 
-        type='text'
-        className='search'
-        placeholder='Search...'
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyPress={search}
-      />
+      <input type='text' className='search' placeholder='Search...' value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
     </div>
   );
 }
