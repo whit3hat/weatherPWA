@@ -9,6 +9,6 @@ This application was created with React.js and Open Weather API
 
 ### Screenshots
 
-![HomePage](../ReadMe/homepage.png)
-![Desktop Search](../ReadMe/desktop-search.png)
-![Mobile](../ReadMe/mobile-search.png)
+![HomePage](./ReadMe/homepage.png)
+![Desktop Search](./ReadMe/desktop-search.png)
+![Mobile](./ReadMe/mobile-search.png)
